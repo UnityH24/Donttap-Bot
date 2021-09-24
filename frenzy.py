@@ -18,6 +18,7 @@ def main():
 	while not keyboard.is_pressed('q'):
 		while keyboard.is_pressed('p'):
 			pic = pyautogui.screenshot(region=(740, 340, 430, 430))
+			# if your monitor resolution isn't 1920x1080, you'll haqve to adjust the region, the 'jump' variable and the numbers on line 32
 			width, height = pic.size
 			jump = 135
 			
